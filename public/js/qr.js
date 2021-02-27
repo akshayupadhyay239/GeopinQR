@@ -14,7 +14,6 @@ function link() {
 
   //Download Button
   let dataURL = qrContainerEl.firstChild.toDataURL();
-
   let btnDownload = document.querySelector(".button-download");
   btnDownload.setAttribute("href", dataURL);
   btnDownload.classList.remove("hidden");

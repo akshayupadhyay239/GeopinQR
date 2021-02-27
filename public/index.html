@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="./css/App.css" />
     <script src="./js/qrcode.min.js"></script>
+    <script src="./js/html2canvas.min.js"></script>
     <script type="text/javascript" src="./js/App.js"></script>
     <script type="text/javascript" src="./js/qr.js"></script>
     <script
@@ -12,18 +13,24 @@
   <body onload="initialize();">
     <!--intro page/landing page-->
     <div class="intro">
-      <div class="logo">
-        <img src="./images/logo geopin.png" alt="geoping logo" />
+      <img src="./images/logo.svg" alt="geoping logo" class="logo" />
+      <img src="./images/geopin.svg" class="illustration" />
+      <div class="info">
+        <p>Pin yourself on the map</p>
+        <p>Let people find you at ease</p>
       </div>
-      <div class="illustration">
-        <img src="./images/geopin.svg" width="901" height="641">
+      <div class="form">
+        <input
+          type="text"
+          class="form-input place-name"
+          placeholder="place name"
+        />
+        <input type="text" class="form-input" placeholder="keywords" />
+        <button class="button-genQR" onclick="changeName()">Pin me</button>
       </div>
     </div>
 
-    <div class="App">
-      <h1>GeopinQR</h1>
-      <p>making you address relavent</p>
-    </div>
+    <div class="App"></div>
     <div class="main">
       <div class="maparea">
         <label class="hidden" for="lat">Lattitude</label>
@@ -35,10 +42,7 @@
         /><br />
         <label class="hidden" for="Long">Longitude</label>
         <input class="hidden" name="long" id="Long" value="73.34024943731082" />
-        <div
-          id="map_canvas"
-          style="width: 600px; height: 400px; border: solid black 1px"
-        ></div>
+        <div id="map_canvas" style="width: 750px; height: 550px"></div>
       </div>
 
       <div class="qrtemp">

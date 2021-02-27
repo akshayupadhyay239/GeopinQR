@@ -15,7 +15,9 @@ function link() {
   //Download Button
   let dataURL = qrContainerEl.firstChild.toDataURL();
 
-  let buttonHTML = `<a href="${dataURL}" target="_blank" download="image.png">Download QR</a>`;
-
-  qrContainerEl.insertAdjacentHTML("afterend", buttonHTML);
+  let btnDownload = document.querySelector(".button-download");
+  btnDownload.setAttribute("href", dataURL);
+  // let buttonHTML = `<a href="${dataURL}" target="_blank" download="image.png">Download QR</a>`;
+  btnDownload.classList.remove("hidden");
+  // qrContainerEl.insertAdjacentHTML("afterend", buttonHTML);
 }

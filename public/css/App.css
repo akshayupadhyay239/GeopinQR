@@ -40,6 +40,7 @@ body {
 /* QR Template CSS */
 
 .qr-template {
+  position: relative;
   background-color: #6c63ff;
   color: #fff6f6;
   padding: 25px 20px 15px 20px;
@@ -63,8 +64,9 @@ body {
 .white-box {
   background-color: white;
   border-radius: 0 0 40px 40px;
-  position: relative;
+  position: absolute;
   left: 50%;
+  top: -5%;
   width: 100px;
   height: 20px;
   transform: translate(-50%, 100%);
@@ -144,7 +146,7 @@ body {
   position: absolute;
   top: 350px;
   left: 80px;
-  background-color: 6c63ff;
+  background-color: #6c63ff;
   display: flex;
   flex-direction: column;
   width: 200px;

@@ -1,20 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/App.css" />
-    <script src="./js/qrcode.min.js"></script>
-    <script src="./js/html2canvas.min.js"></script>
-    <script type="text/javascript" src="./js/App.js"></script>
-    <script type="text/javascript" src="./js/qr.js"></script>
-    <script
-      type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=false"
-    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/App.css" />
   </head>
   <body onload="initialize();">
     <!--intro page/landing page-->
     <div class="intro">
-      <img src="./images/logo.svg" alt="geoping logo" class="logo" />
-      <img src="./images/geopin.svg" class="illustration" />
+      <img src="images/logo.svg" alt="geoping logo" class="logo" />
+      <img src="images/geopin.svg" class="illustration" />
       <div class="info">
         <p>Pin yourself on the map</p>
         <p>Let people find you at ease</p>
@@ -46,12 +42,12 @@
       </div>
 
       <div class="qrtemp">
-        <div class="white-box"></div>
         <div class="qr-template">
+          <div class="white-box"></div>
           <p class="logo-name">GeopinQR</p>
           <h1 class="company-name">Rinku devi chai stall</h1>
           <div class="qr-img-container" id="qrimg">
-            <img src="./images/dummyQR.png" alt="" />
+            <img src="images/dummyQR.png" alt="" />
           </div>
           <p class="tagline">scan QR to get address</p>
         </div>
@@ -67,5 +63,13 @@
         <a class="button-location hidden" id="link" href="">Location Link</a>
       </div>
     </div>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+    <script type="text/javascript" src="js/qr.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false"
+    ></script>
   </body>
 </html>

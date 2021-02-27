@@ -13,8 +13,17 @@ function link() {
   qrCode.makeCode(link);
 
   //Download Button
-  let dataURL = qrContainerEl.firstChild.toDataURL();
+  // let dataURL = qrContainerEl.firstChild.toDataURL();
+  let dataURL;
+
+  window.scrollTo(0, 0);
+  html2canvas(document.querySelector(".qr-template"), {
+    height: 487.35,
+    width: 316,
+  }).then(function (canvas) {
+    btnDownload.setAttribute("href", canvas.toDataURL("image/png", 0.9));
+  });
+
   let btnDownload = document.querySelector(".button-download");
-  btnDownload.setAttribute("href", dataURL);
   btnDownload.classList.remove("hidden");
 }

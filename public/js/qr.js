@@ -11,4 +11,11 @@ function link() {
   qrContainerEl.innerHTML = "";
   let qrCode = new QRCode(qrContainerEl);
   qrCode.makeCode(link);
+
+  //Download Button
+  let dataURL = qrContainerEl.firstChild.toDataURL();
+
+  let buttonHTML = `<a href="${dataURL}" target="_blank" download="image.png">Download QR</a>`;
+
+  qrContainerEl.insertAdjacentHTML("afterend", buttonHTML);
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   font-family: Roboto;
 }
@@ -17,7 +17,7 @@ body{
 }
 .qrtemp{
   margin: 20px auto;
-  background-color: white;
+  background-color: #A78BFA;
   padding: 50px;
   border-radius: 15px;
   box-shadow: rgb(0 0 0 / 5%) 0px 5px 16px 0px;

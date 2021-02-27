@@ -14,22 +14,43 @@
       <h1>GeopinQR</h1>
       <p>making you address relavent</p>
     </div>
-      <div class="main">
-        <div class="maparea">
-          <label for="lat">Lattitude</label>
-          <input name="Lat" id='Lat' value="28.004913056569322"/><br/>
-          <label for="Long">Longitude</label>
-          <input name="long" id='Long' value="73.34024943731082" />
-          <div id="map_canvas" style="width:600px;height:400px;border:solid black 1px;"></div>
-        </div>
+    <div class="main">
+      <div class="maparea">
+        <label class="hidden" for="lat">Lattitude</label>
+        <input
+          class="hidden"
+          name="Lat"
+          id="Lat"
+          value="28.004913056569322"
+        /><br />
+        <label class="hidden" for="Long">Longitude</label>
+        <input class="hidden" name="long" id="Long" value="73.34024943731082" />
+        <div
+          id="map_canvas"
+          style="width: 600px; height: 400px; border: solid black 1px"
+        ></div>
+      </div>
+
       <div class="qrtemp">
-        <h1>Company name</h1>
-        <p>dummy details about Company</p>
-        <div id="qrimg">
-          <img src="qr code" alt="qr code itself" />
+        <div class="white-box"></div>
+        <div class="qr-template">
+          <p class="logo-name">GeopinQR</p>
+          <h1 class="company-name">Rinku devi chai stall</h1>
+          <div class="qr-img-container" id="qrimg">
+            <img src="./images/dummyQR.png" alt="" />
+          </div>
+          <p class="tagline">scan QR to get address</p>
         </div>
-        <a id="link" href="">Link to location</a>
-        <button onclick="link()">Generate QR</button>
+
+        <a
+          href=""
+          class="button-download hidden"
+          target="_blank"
+          download="image.png"
+          >Download QR</a
+        >
+        <a class="button-location" id="link" href="">Link to location</a>
+        <button onclick="link()" class="button-genQR">Generate QR</button>
       </div>
     </div>
   </body>

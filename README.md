@@ -1,10 +1,12 @@
 # GeopinQR
-Geopin QR can convert any location on google map to QR codes. small shop/store owners can include these codes in their advertisments so that people can find them wothout any hassle.
+Small shop/business owners can use GeopinQR to generate QR Code for their exact Google Maps Location and stick it at places where customers can use it and direct themselves at ease.
 
 ## Tech stack ##
 * HTML
 * CSS
 * Javascript
+* Google Maps API
+* QR Code Js API
 
 ## Libraries and dependencies ##
 * QRcodeJS

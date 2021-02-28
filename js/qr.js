@@ -26,4 +26,6 @@ function link() {
 
   let btnDownload = document.querySelector(".button-download");
   btnDownload.classList.remove("hidden");
+
+  window.scrollTo(0, document.body.scrollHeight);
 }

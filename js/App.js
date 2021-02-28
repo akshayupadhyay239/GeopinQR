@@ -70,4 +70,10 @@ function changeName() {
   name = name.slice(0, 20);
 
   document.querySelector(".company-name").innerText = name;
+
+  window.scrollTo({
+    left: 0,
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
 }

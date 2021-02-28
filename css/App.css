@@ -3,6 +3,10 @@
 
 /* ow color: rgb(247, 247, 247) */
 
+html {
+  /* scroll-behavior: smooth; */
+}
+
 body {
   background-color: rgb(247, 247, 247);
   text-align: center;

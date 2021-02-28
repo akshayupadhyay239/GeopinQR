@@ -9,6 +9,7 @@ Geopin QR can convert any location on google map to QR codes. small shop/store o
 ## Libraries and dependencies ##
 * QRcodeJS
 * Html2canvas
+* GoogleMaps API
 
 ## installation steps ##
 * Download Code Zip from github Repo

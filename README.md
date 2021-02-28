@@ -11,3 +11,6 @@ Geopin QR is product that can convert any location on google map to QR codes. sm
 * Html2canvas
 
 ## installation steps ##
+* Download Code Zip from github Repo
+* Extract Zip
+* Open Index.html from the extracted folder
